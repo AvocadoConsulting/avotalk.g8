@@ -9,7 +9,10 @@
 }
 
 .mylogo  {
-  background-image: url(../images/ecetera-logo-grey.png);
+  background-image: url(../images/avocado-trans.png);
+  background-size: 50px;
   background-repeat: no-repeat;
-  background-position: left bottom;
+  background-position: 15px 94%;
 }
+
+#  background-position: left bottom;
