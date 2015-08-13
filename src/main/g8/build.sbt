@@ -7,8 +7,8 @@ enablePlugins(S3WebsitePlugin)
  *
  * name := "foobar"
  *
- * would produce an a path(key) in S3 of "techsync/\<year\>/\<month\>/foobar"
- *   where \<year\> is the current year and \<month\> is the current month.
+ * would produce an a path(key) in S3 of "techsync/<year>/<month>/foobar"
+ *   where <year> is the current year and <month> is the current month.
  *
  * you can modify the prefix by using PrefixKeys.tsyncprefix setting,
  * eg to create an s3 path of "techsync/wibble/foobar" you would do this:-
@@ -30,7 +30,7 @@ name := "$name$"
 
 /* The following settings are all set by default - uncomment to change them */
 
-//bucket := "docs.aws.avocadoconsulting.com.au"
+//s3wsBucket := "docs.aws.avocadoconsulting.com.au"
 
 //s3wsAssetDir := baseDirectory.value / "assets"
 

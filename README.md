@@ -15,7 +15,7 @@ prepare your talk skeleton.
 ### push to s3 bucket
 Once uploaded to the bucket it will be visible online at
 ```
-http://docs.aws.avocadoconsulting.com.au/techtalks/&lt;year&gt;/&lt;month&gt;/&gt;name&lt;/index.html
+http://docs.aws.avocadoconsulting.com.au/techtalks/<year>/<month>/<name>/index.html
 ```
 
 to upload it type:-
@@ -27,7 +27,7 @@ this will cause the copy up in S3 to mirror what you have locally. You can test 
 
 ```
 $ # show bucket name
-$ sbt s3wsUpload::bucket
+$ sbt s3wsBucket
 [info] docs.aws.avocadoconsulting.com.au
 
 $ # show the prefix
