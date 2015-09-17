@@ -13,7 +13,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 <link rel="stylesheet" href="css/mystyle.css">
 <link rel="stylesheet" href="http://cdn.jsdelivr.net/reveal.js/3.0.0/css/reveal.css">
-<link rel="stylesheet" href="http://cdn.jsdelivr.net/reveal.js/3.0.0/css/theme/beige.css" id="theme">
+<link rel="stylesheet" href="http://cdn.jsdelivr.net/reveal.js/3.0.0/css/theme/black.css" id="theme">
+<!-- link rel="stylesheet" href="http://cdn.jsdelivr.net/reveal.js/3.0.0/css/theme/beige.css" id="theme" -->
 
 <!-- Code syntax highlighting -->
 <link rel="stylesheet" href="http://cdn.jsdelivr.net/reveal.js/3.0.0/lib/css/zenburn.css">
@@ -90,7 +91,16 @@ dependencies: [
 ]
 });
 
-  </script>
+Reveal.addEventListener( 'showlogo', function() {                               
+    // Called each time the slide with the "stats" state is made visible        
+    doLogo(370);                                                                
 
+    //  Reveal.configure({ transition: 'none' });                               
+    } );                                                                        
+
+  </script>                                                                     
+
+  <script src="js/d3.min.js" charset="utf-8"></script>                             
+  <script src="js/avologo.js" charset="utf-8"></script>  
   </body>
   </html>

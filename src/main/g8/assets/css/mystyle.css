@@ -16,3 +16,11 @@
 }
 
 #  background-position: left bottom;
+
+html.questions body {
+  background-color: hsla(191, 96%, 23%, .8);
+  background-size: 80%;
+  background-image: url("../images/school_question.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
