@@ -56,6 +56,14 @@ if( window.location.search.match( /print-pdf/gi ) ) {
 
     <!-- the markdown slides -->
     <section
+      data-markdown="slides/intro.md"
+      data-separator="^\n\n\n"
+      data-separator-vertical="^\n\nvvvv\n"
+      data-separator-notes="^Note:"
+      data-charset="utf-8">
+    </section>
+
+    <section
       data-markdown="slides/slides.md"
       data-separator="^\n\n\n"
       data-separator-vertical="^\n\nvvvv\n"
