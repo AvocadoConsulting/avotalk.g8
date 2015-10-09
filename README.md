@@ -5,7 +5,7 @@ Template to get tech talks running quickly.
 after installing g8 you should be able to type:-
 
 ```
-g8 AvocadoConsulting/techtalk.g8
+g8 AvocadoConsulting/avotalk.g8
 ```
 
 The script will checkout the template, ask a few boilerplate questions and
