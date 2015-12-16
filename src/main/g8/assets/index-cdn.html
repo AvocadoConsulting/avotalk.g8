@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+
+<title>$title$</title>
+<meta name="description" content="$desc$">
+<meta name="author" content="$yourname$">
+
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+<link rel="stylesheet" href="css/mystyle.css">
+<link rel="stylesheet" href="http://cdn.jsdelivr.net/reveal.js/3.0.0/css/reveal.css">
+<link rel="stylesheet" href="http://cdn.jsdelivr.net/reveal.js/3.0.0/css/theme/black.css" id="theme">
+<!-- link rel="stylesheet" href="http://cdn.jsdelivr.net/reveal.js/3.0.0/css/theme/beige.css" id="theme" -->
+
+<!-- Code syntax highlighting -->
+<link rel="stylesheet" href="http://cdn.jsdelivr.net/reveal.js/3.0.0/lib/css/zenburn.css">
+
+<!-- Printing and PDF exports -->
+<script>
+if( window.location.search.match( /print-pdf/gi ) ) {
+  var link = document.createElement( 'link' );
+  link.rel = 'stylesheet';
+  link.type = 'text/css';
+  link.href = 'http://cdn.jsdelivr.net/reveal.js/3.0.0/css/print/pdf.css';
+  document.getElementsByTagName( 'head' )[0].appendChild( link );
+}
+</script>
+
+<!--[if lt IE 9]>
+                <script src="http://cdn.jsdelivr.net/reveal.js/3.0.0/lib/js/html5shiv.js"></script>
+                <![endif]-->
+</head>
+
+<body>
+
+<div class="reveal mylogo">
+
+  <!-- Any section element inside of this container is displayed as a slide -->
+  <div class="slides">
+    <section class="intro" data-background="$splashimageUrl$" data-background-size="70%">
+      <h1>$title$</h1>
+      <p>
+      <small>Slides by
+        <a href="$yourwebsite$">$yourname$</a>
+      </small>
+      </p>
+      <small>
+        <a href="./?print-pdf/#" target="_blank">to print as PDF click here then ctrl-p</a>
+      </small>
+    </section>
+
+
+    <!-- the markdown slides -->
+    <section
+      data-markdown="slides/intro.md"
+      data-separator="^\n\n\n"
+      data-separator-vertical="^\n\nvvvv\n"
+      data-separator-notes="^Note:"
+      data-charset="utf-8">
+    </section>
+
+    <section
+      data-markdown="slides/slides.md"
+      data-separator="^\n\n\n"
+      data-separator-vertical="^\n\nvvvv\n"
+      data-separator-notes="^Note:"
+      data-charset="utf-8">
+    </section>
+
+  </div>
+
+  <script src="http://cdn.jsdelivr.net/reveal.js/3.0.0/lib/js/head.min.js"></script>
+  <script src="http://cdn.jsdelivr.net/reveal.js/3.0.0/js/reveal.js"></script>
+
+  <script>
+
+// Full list of configuration options available at:
+// https://github.com/hakimel/reveal.js#configuration
+  Reveal.initialize({
+controls: true,
+progress: true,
+history: true,
+center: true,
+
+transition: 'none', // none/fade/slide/convex/concave/zoom
+
+// Optional reveal.js plugins
+dependencies: [
+{ src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+{ src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+{ src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+{ src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/highlight/highlight.js', async: true, async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+{ src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/zoom-js/zoom.js', async: true },
+{ src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/notes/notes.js', async: true }
+]
+});
+
+Reveal.addEventListener( 'showlogo', function() {                               
+    // Called each time the slide with the "stats" state is made visible        
+    doLogo(370);                                                                
+
+    //  Reveal.configure({ transition: 'none' });                               
+    } );                                                                        
+
+  </script>                                                                     
+
+  <script src="js/d3.min.js" charset="utf-8"></script>                             
+  <script src="js/avologo.js" charset="utf-8"></script>  
+  </body>
+  </html>
