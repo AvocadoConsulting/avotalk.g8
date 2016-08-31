@@ -43,7 +43,7 @@ the above talk would be at `http://docs.aws.avocadoconsulting.com.au/techtalks/2
 
 ### save your talk to a git repo
 
-Add your talk to the (techtalks git repo TBD)[https://???]
+Add your talk to the [techtalks git repo](https://bitbucket.org/account/user/avocadoconsulting/projects/TALK)
 and follow the prompts to add it to gitlab.
 
 
